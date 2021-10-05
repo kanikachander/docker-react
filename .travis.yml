@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker login kanikachander/docker-react
+  - docker login kanikachander/docker-react --username=kanikachander --password=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
   - docker run -t kanikachander/docker-react -f Dockerfile.dev .
 
 script:
