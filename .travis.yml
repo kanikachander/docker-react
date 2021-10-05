@@ -2,10 +2,8 @@ sudo: required
 services:
   - docker
 
-docker_login:
-  - docker login kanikachander/docker-react
-
 before_install:
+  - docker login kanikachander/docker-react
   - docker run -t kanikachander/docker-react -f Dockerfile.dev .
 
 script:
